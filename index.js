@@ -17,7 +17,6 @@ const main = async () => {
    *
    * @returns {object} application state
    */
-
   const getState = () => state;
   const env = process.env.ENV || 'local';
   state.rootDir = __dirname;

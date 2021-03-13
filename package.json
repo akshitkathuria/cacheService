@@ -4,6 +4,7 @@
   "description": "cache service",
   "main": "index.js",
   "scripts": {
+    "test": "mocha",
     "start": "node index.js",
     "lint": "eslint \"**/*.js\"",
     "lintfix": "eslint \"**/*.js\" --fix"
