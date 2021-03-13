@@ -1,0 +1,45 @@
+{
+    "extends": [
+        "airbnb-base",
+        "plugin:jsdoc/recommended"
+    ],
+    "env": {
+        "mocha": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 10
+    },
+    "rules": {
+        "max-len": [
+            "error",
+            {
+                "code": 120
+            }
+        ],
+        "global-require": "off",
+        "no-await-in-loop": "off",
+        "object-curly-newline": "off",
+        "no-console": "off",
+        "no-restricted-syntax": [
+            "error",
+            "LabeledStatement",
+            "WithStatement"
+        ],
+        "guard-for-in": "off",
+        "linebreak-style": "off",
+        "consistent-return": "off",
+        "jsdoc/require-jsdoc": [
+            "warn",
+            {
+                "enableFixer": false,
+                "require": {
+                    "ArrowFunctionExpression": true,
+                    "ClassExpression": true,
+                    "FunctionDeclaration": true,
+                    "FunctionExpression": true,
+                    "MethodDefinition": true
+                }
+            }
+        ]
+    }
+}
