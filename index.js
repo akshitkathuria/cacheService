@@ -18,8 +18,8 @@ const main = async () => {
    * @returns {object} application state
    */
 
-  const env = process.env.ENV || 'local';
   const getState = () => state;
+  const env = process.env.ENV || 'local';
   state.rootDir = __dirname;
   state.utils = utils;
   state.db = {
