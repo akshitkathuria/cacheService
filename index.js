@@ -17,11 +17,13 @@ const main = async () => {
    *
    * @returns {object} application state
    */
+
+  const env = process.env.ENV || 'local';
   const getState = () => state;
   state.rootDir = __dirname;
   state.utils = utils;
   state.db = {
-    cache: await appIndex.initDB(config.MONGO_URL, 'cache', utils),
+    cache: await appIndex.initDB(config.MONGO_URL[env], 'cache', utils),
   };
 
   state.services = await services.init(getState, config);

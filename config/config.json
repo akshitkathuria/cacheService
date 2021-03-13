@@ -1,6 +1,8 @@
 {
     "PORT": "3000",
-    "MONGO_URL": "mongodb://localhost:27017",
+    "MONGO_URL": {
+        "local": "mongodb://localhost:27017"
+    },
     "MAX_CACHE_LIMIT": 2,
     "CACHE_TTL": 60000
 }
